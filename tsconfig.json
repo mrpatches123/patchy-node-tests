@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "es2021",
+		"moduleResolution": "node",
+		"module": "ES2020",
+		"declaration": true,
+		"noLib": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": false,
+		"pretty": false,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"allowUnreachableCode": true,
+		"allowUnusedLabels": true,
+		"noImplicitAny": false,
+		"noImplicitReturns": false,
+		"noImplicitUseStrict": false,
+		"outDir": "./",
+		"rootDir": "./",
+		"baseUrl": "./",
+		"listFiles": false,
+		"noEmitHelpers": true,
+		"noUncheckedIndexedAccess": true,
+		"noEmit": true
+	},
+	"include": [
+		"./**/*.ts",
+	],
+	"exclude": [
+		"node_modules/**/*",
+		".git/**/*",
+	],
+	"compileOnSave": true
+}
