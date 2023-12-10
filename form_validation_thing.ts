@@ -106,7 +106,10 @@ class Form {
 		Object.entries(schema).forEach(([elementKey, value]) => {
 			if (root && elementKey === 'global') this.checkSchema(value, target, root, stack);
 			else if (elementKey === 'schema') this.checkSchema(value, target[elementKey], root, stack);
-
+			else if (Array.isArray(value)) value.forEach((type) => {
+				if (typeof target === type.name.toLowerCase()) console.log("type: " + type.name.toLowerCase() + " | target: " + typeof target);
+				else console.log("type: " + type.name.toLowerCase() + " | target: " + typeof target);
+			}
 		});
 	}
 }
