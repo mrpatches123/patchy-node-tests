@@ -1,4 +1,4 @@
-const players = [{ x: 22, z: 22 }, { x: 1, z: 5 }];
+
 /**
  * @param {{r: number, theta: number}} radians 
  * @param {{x: number, z: number}} center 
@@ -59,4 +59,5 @@ function getCircularRandomRangeOppositeFromVectors(minR, maxR, vectors = [], cen
 	}
 	console.log(vectorsInRange);
 }
+const players = [{ x: 22, z: 22 }, { x: 1, z: -5 }, { x: -8, z: -5 }];
 getCircularRandomRangesFromVectors(0, 10, players);
