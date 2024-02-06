@@ -59,7 +59,7 @@ function getCircularRandomRangeOppositeFromVectors(minR, maxR, vectors = [], cen
 		console.log({ minVector, maxVector });
 		const mintheta = Math.min(minVector.theta, maxVector.theta);
 		const maxtheta = Math.max(minVector.theta, maxVector.theta);
-		return { minR, maxR, mintheta: mintheta + mintheta / 8, maxtheta: maxtheta - mintheta / 8, center };
+		return { minR, maxR, mintheta, maxtheta, center };
 	} else if (vectorsInRange.length === 2) {
 		const [aV, bV] = vectorsInRange;
 		const test = aV > bV;
